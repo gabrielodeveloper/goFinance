@@ -5,6 +5,7 @@ import {
   Poppins_500Medium,
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { Myapp } from "./Myapp";
 
@@ -19,7 +20,11 @@ export default function App() {
 
 if(isFontLoaded) {
   SplashScreen.hideAsync()
-  return <Myapp />
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Myapp />
+    </GestureHandlerRootView>
+  )
 }
 }
 

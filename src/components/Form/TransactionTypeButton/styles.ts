@@ -1,8 +1,7 @@
-import styled from "styled-components/native";
+import styled, { css } from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 import { Feather } from '@expo/vector-icons';
 import { RFValue } from "react-native-responsive-fontsize";
-import { css } from "styled-components";
 
 interface IconProps {
   type: 'up' | 'down';
