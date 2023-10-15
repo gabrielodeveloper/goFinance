@@ -78,11 +78,13 @@ export function Resume() {
     <Container>
       <Header title="Resumo por categorias" />
         <Content>
+            <ChartContainer>
                <VictoryPie 
                     data={totalByCategories}
                     x="name"
                     y="total"
                     />
+              </ChartContainer>
             {
               totalByCategories.map(item => (
                 <HistoryCard 
